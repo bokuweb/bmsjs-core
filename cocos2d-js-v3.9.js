@@ -8459,7 +8459,7 @@ cc.LoaderScene = cc.Scene.extend({
         var self = this;
         var logoWidth = 160;
         var logoHeight = 200;
-        var bgLayer = self._bgLayer = new cc.LayerColor(cc.color(32, 32, 32, 0));
+        var bgLayer = self._bgLayer = new cc.LayerColor(cc.color(0,0,0,0));
         self.addChild(bgLayer, 0);
         var fontSize = 24, lblHeight =  -logoHeight / 2 + 100;
         if(cc._loaderImage){
@@ -13557,7 +13557,7 @@ cc.rendererWebGL = {
     _cacheToBufferCmds: {},
     _cacheInstanceIds: [],
     _currentID: 0,
-    _clearColor: cc.color(),
+    _clearColor: cc.color(0,0,0,0),
     getRenderCmd: function (renderableObject) {
         return renderableObject._createRenderCmd();
     },
