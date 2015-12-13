@@ -8459,7 +8459,7 @@ cc.LoaderScene = cc.Scene.extend({
         var self = this;
         var logoWidth = 160;
         var logoHeight = 200;
-        var bgLayer = self._bgLayer = new cc.LayerColor(cc.color(32, 32, 32, 255));
+        var bgLayer = self._bgLayer = new cc.LayerColor(cc.color(32, 32, 32, 0));
         self.addChild(bgLayer, 0);
         var fontSize = 24, lblHeight =  -logoHeight / 2 + 100;
         if(cc._loaderImage){
