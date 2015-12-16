@@ -19,3 +19,5 @@ window.onload = () => {
   };
   cc.game.run("gameCanvas");
 };
+
+

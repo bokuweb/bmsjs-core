@@ -7,9 +7,10 @@
     "connect": "node server.js",
     "watch": "npm run watch:js",
     "concat": "concat-cli -f lib/*.js -o dist/main.js",
-    "build": "npm run build:js && npm run concat",
+    "build:example": "browserify --extension=js -o example/dist/main.js example/index.js",
+    "build": "npm run build:js",
     "watch:js": "watchify --extension=js -o lib/main.js src/index.js",
-    "build:js": "browserify --extension=js -o lib/main.js src/index.js",
+    "build:js": "browserify --extension=js -o dist/main.js src/index.js",
     "test": "karma start"
   },
   "dependencies": {
